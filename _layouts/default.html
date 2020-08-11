@@ -3,15 +3,15 @@
 		<head>
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="css/main.css">
+			<link rel="stylesheet" type="text/css" href={{site.url | append: "/css/main.css"}}>
 		</head>
 		<body>
 			<nav>
 	    		<ul>
-	        		<li><a href="/webpage">Home</a></li>
-		        	<li><a href="/webpage/about">About</a></li>
-	        		<li><a href="/webpage/cv">CV</a></li>
-	        		<li><a href="/webpage/blog">Blog</a></li>
+	        		<li><a href={{site.url}}>Home</a></li>
+		        	<li><a href={{site.url | append: "/about"}}>About</a></li>
+	        		<li><a href={{site.url | append: "/cv"}}>CV</a></li>
+	        		<li><a href={{site.url | append: "/blog"}}>Blog</a></li>
 	    		</ul>
 			</nav>
 			<div class="container">
